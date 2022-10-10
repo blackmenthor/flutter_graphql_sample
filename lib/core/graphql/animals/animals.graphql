@@ -1,0 +1,7 @@
+query animals($name: String) {
+    animals(name: $name) {
+        id,
+        name,
+        image
+    }
+}

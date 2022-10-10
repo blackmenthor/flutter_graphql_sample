@@ -1,0 +1,17 @@
+query keepers($name: String){
+    keepers(name:$name) {
+        id,
+        name,
+        originCountry,
+        animal {
+            id,
+            name,
+            image,
+            createdDate,
+            modifiedDate
+        },
+        birthDate,
+        createdDate,
+        modifiedDate
+    }
+}

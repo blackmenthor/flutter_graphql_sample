@@ -1,0 +1,27 @@
+query galleries($input: GalleryInput){
+    galleries(input:$input) {
+        id,
+        forAnimal {
+            id,
+            name,
+            image,
+            createdDate,
+            modifiedDate
+        },
+        forKeeper {
+            id,
+            name,
+            originCountry,
+            animal {
+                id,
+                name,
+            },
+            birthDate,
+            createdDate,
+            modifiedDate
+        },
+        image,
+        createdDate,
+        modifiedDate
+    }
+}
